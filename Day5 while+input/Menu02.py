@@ -6,7 +6,7 @@ while True:
     elif menu ==2:
         print("설정")
     elif menu ==3:
-        print("잘못된 번호입니다")
+        print("종료")
         break
     else:
         print("1~3번중에서 입력해주세요")
