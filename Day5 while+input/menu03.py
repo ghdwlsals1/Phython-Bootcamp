@@ -5,9 +5,16 @@ def deposit():
     global cash
     money_in=int(input("입금하실 금액을 입력해주세요."))
     cash=cash+money_in
-    print(f"고객님의 현재 입금 후에 잔액은 {cash}원 입니다.")
+    print(f"고객님의 현재 입금 후 잔액은 {cash}원 입니다.")
 def withdrow():
-    print(f"고객님의 현재 출금 후에 잔액은 {cash}원 입니다.")
+    global cash
+    money_out=int(input("출금 하실 금액을 입력해주세요."))
+    if cash >= money_out:
+        cash=cash-money_out
+        print(f"고객님의 현재 출금 후 잔액은 {cash}원 입니다.")
+    else:
+        print("잔액이 부족합니다")
+    
 def menu():
     print("1. 잔액 조회")
     print("2. 입금")
