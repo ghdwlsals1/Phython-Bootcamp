@@ -1,9 +1,8 @@
 cash = 10000
 def balance():
     print(f"고객님의 현재 잔액은 {cash}원 입니다")
-def deposit():
+def deposit(money_in):
     global cash
-    money_in=int(input("입금하실 금액을 입력해주세요."))
     cash=cash+money_in
     print(f"고객님의 현재 입금 후 잔액은 {cash}원 입니다.")
 def withdrow():
@@ -26,7 +25,8 @@ while True:
     if menu_num==1:
         balance()
     elif menu_num==2:
-        deposit()
+        money_in=int(input("입금하실 금액을 입력해주세요."))
+        deposit(money_in)
     elif menu_num==3:
         withdrow()
     elif menu_num==4:
