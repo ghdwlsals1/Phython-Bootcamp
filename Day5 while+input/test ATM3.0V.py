@@ -2,6 +2,7 @@ print("===========================")
 print("1. 잔액 조회 ")
 print("2. 입 금 ")
 print("3. 출 금 ")
+print("4. 종 료 ")
 print("===========================")
 cash=50000
 def balance():
@@ -29,5 +30,8 @@ while True:
         else:
             withdraw(money_out)
             print(f"고객님의 출금 후 잔액은 {cash}원 입니다.")
+    elif menu_num==4:
+        break
     else:
         print("잘못된 입력입니다.")
+        
