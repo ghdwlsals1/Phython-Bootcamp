@@ -30,6 +30,8 @@ while True:
             print(f"고객님의 출금 후 잔액은 {cash}원 입니다.")
     elif menu_num == 3:
         print(f"고객님의 현재 잔액은 {cash}원 입니다.")
+    else:
+        print("잘못된 메뉴입니다.")
 
 
 

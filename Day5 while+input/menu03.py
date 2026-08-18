@@ -23,10 +23,7 @@ while True:
     menu_num=int(input("원하시는 서비스의 번호를 입력해주세요."))
     if menu_num==1:
         current_balance =balance()
-        if current_balance >= 100000:
-            print("잔액이 충분합니다.")
-        else:
-            print("잔액이 부족합니다.")
+        print(current_balance)
     elif menu_num==2:
         money_in=int(input("입금하실 금액을 입력해주세요."))
         deposit(money_in)
