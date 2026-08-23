@@ -14,4 +14,3 @@ for number in result:
 print(f"20 보다 큰 숫자는 {result}")
 print(f"짝수{even_numbers}")
 print(f"홀수{odd_numbers}")
-    
