@@ -1,6 +1,4 @@
-items=["방패","칼","포션","검"]
+items=[1,2,3,4,5,6,7]
 for item in items:
-    if len(item) ==2:
+    if item !=3 and item !=4:
         print(item)
-
-
